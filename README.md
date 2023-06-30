@@ -31,10 +31,25 @@
 
 ---------------- FLOW --------------------------
 
+/*
 
-  add => save into sqlit/DB/local
-  home => fetch all notes => 
-  
+1. Entry point
+2. Navigation
+3. Theme provider
+4. Authontication
+5. Enviroment variable
+6. Structure
+    utils
+    component
+    store
+    screens
+    navigation
+    theme
+    assets
+    api
+7. API
+
+*/
   
 
 
