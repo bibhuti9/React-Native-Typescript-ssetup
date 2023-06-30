@@ -66,6 +66,9 @@ mobx-state-tree
 react-native-permissions
 
 
+````
+```
+
 ------------------------- ADD Aliasing --------------------------
 
 
@@ -86,6 +89,7 @@ react-native-permissions
 
 Install yarn add --dev babel-plugin-module-resolver
 
+# code
 Goto => babel.config.js 
   plugins: [
     // ... other configs, if any
@@ -109,6 +113,7 @@ Goto => babel.config.js
   ],
   
 
-
+```
+````
   
  
