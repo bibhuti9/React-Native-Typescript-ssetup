@@ -64,12 +64,50 @@ mobx-state-tree
 "@react-native-firebase/auth": "^16.5.2
 "@react-native-firebase/messaging": "^16.5.2",
 react-native-permissions
-    
 
--------------------- Utils ---------------- //
-  Date
-  String
 
+------------------------- ADD Aliasing --------------------------
+
+
+ Goto => tsconfig.json
+   // ... other configs, if any
+    "compilerOptions": {
+       // ... other configs, if any
+       "baseUrl": "." ,
+       "paths": {
+          "@api/*": [
+            "src/api/*"
+          ],
+          "@utils/*": [
+            "src/utils/*"
+          ]
+       },
+    }
+
+Install yarn add --dev babel-plugin-module-resolver
+
+Goto => babel.config.js 
+  plugins: [
+    // ... other configs, if any
+    [
+      'module-resolver',
+      {
+        extensions: ['.ios.js', '.android.js', '.ios.jsx', '.android.jsx', '.js', '.jsx', '.json', '.ts', '.tsx'],
+        root: ['.'],
+        alias: {
+          '@api': './src/api',
+          '@assets': './src/assets',
+          '@components': './src/components',
+          '@scenes': './src/scenes',
+          '@theme': './src/theme',
+          '@utils': './src/utils',
+        },
+      },
+    ],
+
+    // ... other configs, if any
+  ],
+  
 
 
   
